@@ -1,0 +1,18 @@
+.menu-item {
+  display: flex;
+  align-items: center;
+  padding-left: 0.5rem;
+  height: 3rem;
+  width: 100%;
+  cursor: pointer;
+  gap: 0.5rem;
+}
+
+.menu-item:hover {
+  background-color: #7c9299;
+}
+
+.sidebar {
+  width: 20%;
+  background-color: #252627;
+}

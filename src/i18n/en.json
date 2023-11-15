@@ -1,0 +1,19 @@
+{
+    "PRODUCT_ADMIN.HEADER.NAME": "Name",
+    "PRODUCT_ADMIN.HEADER.CODE": "Code",
+    "PRODUCT_ADMIN.HEADER.ACTIONS": "Actions",
+    "PRODUCT_ADMIN.HEADER.CODE.PLACEHOLDER": "Search by code",
+    "PRODUCT_ADMIN.HEADER.NAME.PLACEHOLDER": "Search by name",
+    "PRODUCT_ADMIN.KEYWORD.SEARCH": "Keyword Search",
+    "PRODUCT_ADMIN.BUTTON_DELETE": "Delete",
+    "PRODUCT_ADMIN.BUTTON_NEW": "New",
+    "BREADCRUMB.PRODUCTS": "Products",
+    "BREADCRUMB.ADMIN": "Admin",
+    "BREADCRUMB.ADMIN_PRODUCTS": "Products",
+    "SIDEBAR.TITLE": "Alten Shop",
+    "ROUTE.ADMIN": "Admin",
+    "ROUTE.PRODUCTS": "Products",
+    "PRODUCT.SORT.HIGH_LOW":"Price High to Low",
+    "PRODUCT.SORT.LOW_HIGH":"Price Low to High",
+    "PRODUCT.SORT.PLACEHOLDER":"Sort by price"
+  }

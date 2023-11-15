@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+}
+
+.background-whitesmoke {
+  background-color: whitesmoke;
+}
+
+.text-whitesmoke {
+  color: whitesmoke;
+}
