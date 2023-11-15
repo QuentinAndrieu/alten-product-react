@@ -13,7 +13,9 @@
     "SIDEBAR.TITLE": "Alten Shop",
     "ROUTE.ADMIN": "Admin",
     "ROUTE.PRODUCTS": "Products",
+    "ROUTE.HOME": "Home",
     "PRODUCT.SORT.HIGH_LOW":"Price High to Low",
     "PRODUCT.SORT.LOW_HIGH":"Price Low to High",
-    "PRODUCT.SORT.PLACEHOLDER":"Sort by price"
+    "PRODUCT.SORT.PLACEHOLDER":"Sort by price",
+    "HOME.TITLE":"Alten Product Project Home"
   }

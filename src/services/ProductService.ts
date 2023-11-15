@@ -5,7 +5,7 @@ import { HttpResponse } from '../models/HttpResponse';
 const productsPath = '../../assets/products.json';
 
 const productService = {
-  get: async (): Promise<Product[]> => {
+  getProducts: async (): Promise<Product[]> => {
     try {
       const response: AxiosResponse<HttpResponse<Product[]>> = await axios.get(
         productsPath,

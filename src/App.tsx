@@ -9,6 +9,7 @@ import { initReactI18next } from 'react-i18next';
 import i18n from 'i18next';
 
 import enTranslation from './i18n/en.json';
+import HomePage from './pages/Home/HomePage';
 
 i18n.use(initReactI18next).init({
   resources: {
@@ -27,6 +28,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
+            <Route path={Path.HOME} element={<HomePage />} />
             <Route path={Path.PRODUCTS} element={<ProductPage />} />
             <Route path={Path.ADMIN_PRODUCTS} element={<AdminPage />} />
           </Route>

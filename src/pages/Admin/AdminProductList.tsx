@@ -29,10 +29,12 @@ function AdminProductList({
   onSelectProduct,
   selectedProducts,
   products,
+  onDeleteProduct,
 }: {
   onSelectProduct: (products: Product[]) => void;
   selectedProducts: Product[];
   products: Product[];
+  onDeleteProduct: (productId: number) => void;
 }) {
   const { t } = useTranslation();
   const [filters, setFilters] = useState<FiltersState>({
@@ -41,6 +43,9 @@ function AdminProductList({
     code: { value: null, matchMode: FilterMatchMode.CONTAINS },
   });
   const [globalFilterValue, setGlobalFilterValue] = useState('');
+  const navigateToEditProduct = () => {
+    console.info('Navigate to a new page Edit product');
+  };
   const onGlobalFilterChange = (e: ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
     let _filters = { ...filters };
@@ -100,7 +105,14 @@ function AdminProductList({
         filter
         filterPlaceholder={t('PRODUCT_ADMIN.HEADER.NAME.PLACEHOLDER')}
       ></Column>
-      <Column body={AdminProductCellAction}></Column>
+      <Column
+        body={rowData => (
+          <AdminProductCellAction
+            onDeleteProduct={() => onDeleteProduct(rowData.id)}
+            navigateToEditProduct={() => navigateToEditProduct()}
+          />
+        )}
+      ></Column>
     </DataTable>
   );
 }

@@ -21,7 +21,7 @@ export default function ProductList() {
   ];
 
   useEffect(() => {
-    productService.get().then(data => setProducts(data.slice(0, 12)));
+    productService.getProducts().then(data => setProducts(data.slice(0, 12)));
   }, []);
 
   const onSortChange = (event: DropdownChangeEvent) => {

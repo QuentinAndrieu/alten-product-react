@@ -9,7 +9,11 @@ function SideBar() {
   const navigate = useNavigate();
   const { t } = useTranslation();
   const MeunItem = (routeItem: RouteItem) => (
-    <div className="menu-item" onClick={() => navigate(routeItem.path)}>
+    <div
+      className="menu-item"
+      onClick={() => navigate(routeItem.path)}
+      key={routeItem.id}
+    >
       <i className={routeItem.iconClass} />
       {t(routeItem.label)}
     </div>
