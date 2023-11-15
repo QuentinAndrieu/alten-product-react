@@ -19,7 +19,7 @@ export default function BreadCrumbRoute() {
     '/admin/products': t('BREADCRUMB.ADMIN_PRODUCTS'),
   };
 
-  const pathSegments = location.pathname
+  const pathSegments: string[] = location.pathname
     .split('/')
     .filter(segment => segment !== '');
 
@@ -35,7 +35,7 @@ export default function BreadCrumbRoute() {
     },
   );
 
-  const home: BreadCrumbItem = { icon: 'pi pi-home', url: '/products' };
+  const home: BreadCrumbItem = { icon: 'pi pi-home', url: '/' };
 
   return <BreadCrumb model={breadcrumbItems} home={home} />;
 }

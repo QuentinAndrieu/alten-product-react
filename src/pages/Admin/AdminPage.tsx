@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import './Admin.css';
 import AdminProductList from './AdminProductList';
 import { Button } from 'primereact/button';
 import { Product } from '../../models/Product';
